@@ -14,16 +14,20 @@ STEP_SIZE = 1
 def move_one_step_in_specified_direction(direction_param, stack_param):
     global STEP_SIZE
     if direction_param == "up":
-        stack_param.push((stack_param[-1][0], stack_param[-1][1] + STEP_SIZE))
+        stack_param.append((stack_param[-1][0], stack_param[-1][1] + STEP_SIZE))
     elif direction_param == "down":
-        stack_param.push((stack_param[-1][0], stack_param[-1][1] - STEP_SIZE))
+        stack_param.append((stack_param[-1][0], stack_param[-1][1] - STEP_SIZE))
     elif direction_param == "left":
-        stack_param.push((stack_param[-1][0] - STEP_SIZE, stack_param[-1][1]))
+        stack_param.append((stack_param[-1][0] - STEP_SIZE, stack_param[-1][1]))
     elif direction_param == "right":
-        stack_param.push((stack_param[-1][0] + STEP_SIZE, stack_param[-1][1]))
+        stack_param.append((stack_param[-1][0] + STEP_SIZE, stack_param[-1][1]))
 
 
-while True:
-    move_one_step_in_specified_direction(direction, stack)
+# while True:
+#     move_one_step_in_specified_direction(direction, stack)
 
 # turtle.done()
+skk.fd(100)
+sk1 = turtle.Turtle()
+sk1.fd(150)
+sk2 = turtle.Turtle()
